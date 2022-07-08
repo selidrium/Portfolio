@@ -1,0 +1,281 @@
+
+
+body { /* placed here to affect all setins in body */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section { /* all sections inherit these traits */
+    background-color: white; /*2nd and 3rd section are yellow */
+    /* border: solid black 1px; border around section */
+}
+
+.hero { 
+    background-color: #060622; /* 1st section (hero) is a #HEX color */
+    height: 100vh; /* 100% of view point height*/
+    color: white;
+    font-size: 40px;
+}
+
+.hero-thanks {
+    background-color: #060622; /* 1st section (hero) is a #HEX color */
+    height: 100vh; /* 100% of view point height*/
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero-area-thanks {
+    text-align: center;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex; /* center the nav bar, in line rather than stacked */
+    justify-content: space-between; 
+}
+
+ul { 
+    display: flex;
+    list-style-type: none; /* removed dots from lists*/
+    width: 500px;
+    justify-content: space-around; 
+    font-size: 30px;
+}
+
+ul.show {
+    display: block;
+}
+
+li {
+    /* width: 200px; */
+    text-decoration: none; /* removes underlines from links*/
+}
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300; /* thickness of text */
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px; /* spaces 80px from left margin */
+    margin-bottom: 250px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    color: rgb(50, 11, 68);
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ef744b; /* darker shade when hovered over button */
+}
+
+.button:active {
+    background-color: #AE93C8;
+    color: #808080
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 200px;
+    margin: 10px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content:left;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column; /* places Projects above columns */
+    text-align: center; /* centers Projects */
+    padding: 80px; /* adds padding from section margins */
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px; /* rounds edges of picture */
+    margin-left: 80px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(173, 173, 173); 
+    margin: 10px;
+    /* border: 1px solid black; */  /*visualize project cards*/
+}
+
+.project-container {
+    display: flex; /* makes project cards side by side*/
+    justify-content: space-around; /* adds space between projec cards */
+
+}
+
+@media only screen and (max-width:1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    width: 250px;
+    border-radius: 75px;
+    padding-top: 20px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus { /* removes outline from hamburger when clicked */
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #08082c; 
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+    
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #08082c; 
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+/* Style inputs */
+input[type=body], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=text],input[type=email], textarea[type=text],select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    width: 200px;
+    height: 55px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+
+    
+  }
+  
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    color: rgb(50, 11, 68);
+  }
+
+
